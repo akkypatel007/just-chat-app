@@ -3,4 +3,5 @@ class AppRoutes {
   static const Message = '/message';
   static const SIGN_IN = '/sign_in';
   static const Profile = '/profile';
+  static const Contact = '/contact';
 }
