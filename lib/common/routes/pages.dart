@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:just/pages/contact/index.dart';
 import 'package:just/pages/frame/welcome/index.dart';
 
 import '../../pages/frame/sign_in/index.dart';
@@ -37,6 +38,11 @@ class AppPages {
       name: AppRoutes.Profile,
       page: () => const ProfilePage(),
       binding: ProfileBindings(),
+    ),
+    GetPage(
+      name: AppRoutes.Contact,
+      page: () => const ContactPage(),
+      binding: ContactBindings(),
     ),
   ];
 }

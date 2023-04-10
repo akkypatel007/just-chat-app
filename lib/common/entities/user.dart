@@ -136,3 +136,28 @@ class ErrorEntity {
     return data;
   }
 }
+
+class ContactItem {
+  String? token;
+  String? name;
+  String? description;
+  String? avatar;
+  int? online;
+  ContactItem(
+      {this.token, this.name, this.description, this.avatar, this.online});
+
+  factory ContactItem.fromJson(Map<String, dynamic> json) => ContactItem(
+      token: json["token"],
+      name: json["name"],
+      description: json["description"],
+      avatar: json["avatar"],
+      online: json["online"]);
+
+  Map<String, dynamic> toJson() => {
+        "token": token,
+        "name": name,
+        "description": description,
+        "avatar": avatar,
+        "online": online,
+      };
+}
