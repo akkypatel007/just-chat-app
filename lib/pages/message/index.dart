@@ -1,4 +1,4 @@
-library sign_in;
+library message;
 
 export './bindings.dart';
 export './controller.dart';
